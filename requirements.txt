@@ -1,0 +1,4 @@
+selene==2.0.0rc10
+pytest>=9.0.3
+playwright>=1.49.0
+allure-pytest>=2.16.0
