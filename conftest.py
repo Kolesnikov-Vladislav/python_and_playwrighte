@@ -18,8 +18,8 @@ def browser(playwright_instance):
 
 
 @pytest.fixture(scope="function")
-def context(browser: Browser):
-    context = browser.new_context()
+def context(browser: Browser, base_url: str):
+    context = browser.new_context(base_url=base_url)
     yield context
     context.close()
 

@@ -9,7 +9,7 @@ class TestFirstTestOnPython(TestBase):
     @allure.title("Проверка успешного входа в систему")
     def test_first_test(self):
         with allure.step("Открыть страницу"):
-            self.page.goto('https://dev1lkp.aqsi.ru')
+            self.page.goto('/sign-in')
         with allure.step("Проверить логин"):
             self.page.locator("input[name='email']").wait_for(state="visible")
         with allure.step("Указать логин"):
@@ -24,7 +24,7 @@ class TestFirstTestOnPython(TestBase):
             self.page.locator("input[name='confirm']").click()
 
     def test_2_test(self):
-        self.page.goto('https://dev1lkp.aqsi.ru')
+        self.page.goto('/sign-in')
         self.page.locator("input[name='email']").wait_for(state="visible")
         self.page.fill("input[name='email']", "email")
         self.page.locator("input[name='email']").wait_for(state="visible")
@@ -33,7 +33,7 @@ class TestFirstTestOnPython(TestBase):
         self.page.locator("input[name='confirm']").click()
 
     def test_3_test(self):
-        self.page.goto('https://dev1lkp.aqsi.ru')
+        self.page.goto('/sign-in')
         self.page.locator("input[name='email']").wait_for(state="visible")
         self.page.fill("input[name='email']", "email")
         self.page.locator("input[name='email']").wait_for(state="visible")
@@ -43,7 +43,7 @@ class TestFirstTestOnPython(TestBase):
 
     def test_no_first_test(self):
         with allure.step("Открыть страницу"):
-            self.page.goto('https://tech-test.aqsi.ru')
+            self.page.goto('/sign-in')
         with allure.step("Проверить логин"):
             self.page.locator("input[name='email']").wait_for(state="visible")
         with allure.step("Указать логин"):

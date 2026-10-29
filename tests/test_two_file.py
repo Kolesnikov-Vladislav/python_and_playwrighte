@@ -7,7 +7,7 @@ from core.base import TestBase
 class TestSecondTestOnPython(TestBase):
     def test_01_test(self):
 
-        self.page.goto('https://dev1lkp.aqsi.ru')
+        self.page.goto('/sign-in')
         self.page.locator("input[name='email']").wait_for(state="visible")
         self.page.fill("input[name='email']", "email")
         self.page.locator("input[name='email']").wait_for(state="visible")
@@ -16,7 +16,7 @@ class TestSecondTestOnPython(TestBase):
         self.page.locator("input[name='confirm']").click()
 
     def test_02_test(self):
-        self.page.goto('https://dev1lkp.aqsi.ru')
+        self.page.goto('/sign-in')
         self.page.locator("input[name='email']").wait_for(state="visible")
         self.page.fill("input[name='email']", "email")
         self.page.locator("input[name='email']").wait_for(state="visible")
@@ -25,7 +25,7 @@ class TestSecondTestOnPython(TestBase):
         self.page.locator("input[name='confirm']").click()
 
     def test_03_test(self):
-        self.page.goto('https://dev1lkp.aqsi.ru')
+        self.page.goto('/sign-in')
         self.page.locator("input[name='email']").wait_for(state="visible")
         self.page.fill("input[name='email']", "email")
         self.page.locator("input[name='email']").wait_for(state="visible")
@@ -34,7 +34,7 @@ class TestSecondTestOnPython(TestBase):
         self.page.locator("input[name='confirm']").click()
 
     def test_04_test(self):
-        self.page.goto('https://tech-test.aqsi.ru')
+        self.page.goto('/sign-in')
         self.page.locator("input[name='email']").wait_for(state="visible")
         self.page.fill("input[name='email']", "email")
         self.page.locator("input[name='email']").wait_for(state="visible")

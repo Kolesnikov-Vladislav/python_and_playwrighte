@@ -2,11 +2,6 @@ from playwright.sync_api import Page
 
 
 class AuthPage(Page):
-    # def __init__(self, driver):
-    #     input_login_visible =
-    #     input_password =
-    #     check_box_confirm =
-
 
     def input_login_visible(self):
         return self.page.locator("input[name='email']").wait_for(state="visible")
